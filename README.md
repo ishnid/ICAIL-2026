@@ -39,6 +39,12 @@ Contains several subfolders:
 - `outcomes-arguments` and `outcomes-noarguments`: outcomes extracted from judgment files (i.e. the preferred party chosen by the judge models for each scenarios).
 - `outcomes-arguments-vs-noarguments`: judge model outcomes (i.e. preferred chosen party) for experiment using the same advocate models against themselves, with and without access to original arguments.
 
+Files:
+
+- `all_outputs.csv`: concatenation of all output files for the primary experiment (different competing advocates)
+- `all_outputs_arguments_vs_noarguments.cs`: concatenation of all output files for the experiment using the same advocate models against themselves, with and without access to original arguments.
+
+
 ### Prompts
 - `judge_prompts_noarguments`：prompts for judge models.
 - `judge_prompts_arguments`: prompts for judge models.
