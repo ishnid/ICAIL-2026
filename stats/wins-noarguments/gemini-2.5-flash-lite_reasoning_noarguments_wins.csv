@@ -1,0 +1,74 @@
+Judge model: gemini-2.5-flash-lite_reasoning_noarguments
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,47,50,36
+gemini-3-pro-preview,44,-,74,26
+gpt-4o,26,29,-,17
+gpt-5.1,73,75,98,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+claude-sonnet-4.5,133,143,276,138.0
+gpt-5.1,246,79,325,162.5
+gemini-3-pro-preview,144,151,295,147.5
+gpt-4o,72,222,294,147.0
+
+chisquare statistic,81.4357
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.8341,0.0079,0.0005
+gemini-3-pro-preview,0.8341,-,0.0,0.0
+gpt-4o,0.0079,0.0,-,0.0
+gpt-5.1,0.0005,0.0,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,True,True
+gemini-3-pro-preview,False,-,True,True
+gpt-4o,True,True,-,True
+gpt-5.1,True,True,True,-
+
+Skips,5,0.8333333333333334%
+
+Persuadability:,0.2008
+Max Persuadability:,0.3522
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+300,50.42,295,49.58,0.8698,False
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,7,20.0,28,80.0,0.0005,True
+2,24,66.67,12,33.33,0.0652,False
+3,14,42.42,19,57.58,0.4869,False
+4,26,68.42,12,31.58,0.0336,True
+5,20,43.48,26,56.52,0.4614,False
+6,41,100.0,0,0.0,0.0,True
+7,16,36.36,28,63.64,0.0961,False
+8,36,67.92,17,32.08,0.0127,True
+9,26,66.67,13,33.33,0.0533,False
+10,10,23.81,32,76.19,0.0009,True
+11,15,32.61,31,67.39,0.0259,True
+12,29,80.56,7,19.44,0.0003,True
+13,16,37.21,27,62.79,0.1263,False
+14,8,25.81,23,74.19,0.0107,True
+15,12,37.5,20,62.5,0.2153,False
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,43,51,39
+gemini-3-pro-preview,39,58,47
+gpt-4o,25,25,22
+gpt-5.1,81,85,80
+
+Chi-squared statistic,2.6511
+Chi-squared p-value,0.8512
+Significant (p < 0.05)?,False

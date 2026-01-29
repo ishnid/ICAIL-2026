@@ -1,0 +1,73 @@
+Judge model: claude-sonnet-4-5-20250929_8k-thinking_outcomes_arguments_vs_noarguments.csv
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,gpt-4o-arguments,gpt-4o-noarguments,gpt-5.1-arguments,gpt-5.1-noarguments
+gpt-4o-arguments,-,54,-,-
+gpt-4o-noarguments,43,-,-,-
+gpt-5.1-arguments,-,-,-,54
+gpt-5.1-noarguments,-,-,49,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+gpt-5.1-noarguments,49,54,103,51.5
+gpt-4o-arguments,54,43,97,48.5
+gpt-5.1-arguments,54,49,103,51.5
+gpt-4o-noarguments,43,54,97,48.5
+
+chisquare statistic,1.4901
+chisquare pvalue,0.6845
+chisquare significant,False
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,gpt-4o-arguments,gpt-4o-noarguments,gpt-5.1-arguments,gpt-5.1-noarguments
+gpt-4o-arguments,-,0.3099,-,-
+gpt-4o-noarguments,0.3099,-,-,-
+gpt-5.1-arguments,-,-,-,0.6937
+gpt-5.1-noarguments,-,-,0.6937,-
+
+Significant @ p < 0.05?
+,gpt-4o-arguments,gpt-4o-noarguments,gpt-5.1-arguments,gpt-5.1-noarguments
+gpt-4o-arguments,-,False,-,-
+gpt-4o-noarguments,False,-,-,-
+gpt-5.1-arguments,-,-,-,False
+gpt-5.1-noarguments,-,-,False,-
+
+Skips,0,0.0%
+
+Max Persuadability:,0.0567
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+107,53.5,93,46.5,0.358,False
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,4,30.77,9,69.23,0.2668,False
+2,10,90.91,1,9.09,0.0117,True
+3,22,100.0,0,0.0,0.0,True
+4,15,83.33,3,16.67,0.0075,True
+5,15,100.0,0,0.0,0.0001,True
+6,2,22.22,7,77.78,0.1797,False
+7,0,0.0,17,100.0,0.0,True
+8,12,100.0,0,0.0,0.0005,True
+9,8,100.0,0,0.0,0.0078,True
+10,0,0.0,15,100.0,0.0001,True
+11,1,9.09,10,90.91,0.0117,True
+12,0,0.0,9,100.0,0.0039,True
+13,0,0.0,12,100.0,0.0005,True
+14,3,25.0,9,75.0,0.146,False
+15,15,93.75,1,6.25,0.0005,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+gpt-4o-arguments,20,16,18
+gpt-4o-noarguments,14,15,14
+gpt-5.1-arguments,23,14,17
+gpt-5.1-noarguments,22,16,11
+
+Chi-squared statistic,3.0936
+Chi-squared p-value,0.797
+Significant (p < 0.05)?,False

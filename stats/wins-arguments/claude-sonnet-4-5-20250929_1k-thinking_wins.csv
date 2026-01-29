@@ -1,0 +1,74 @@
+Judge model: claude-sonnet-4-5-20250929_1k-thinking
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,50,51,53
+gemini-3-pro-preview,42,-,64,43
+gpt-4o,27,39,-,26
+gpt-5.1,56,59,90,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+gpt-5.1,205,122,327,163.5
+claude-sonnet-4.5,154,125,279,139.5
+gemini-3-pro-preview,149,148,297,148.5
+gpt-4o,92,205,297,148.5
+
+chisquare statistic,33.5391
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.4657,0.0088,0.8482
+gemini-3-pro-preview,0.4657,-,0.0176,0.1371
+gpt-4o,0.0088,0.0176,-,0.0
+gpt-5.1,0.8482,0.1371,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,True,False
+gemini-3-pro-preview,False,-,True,False
+gpt-4o,True,True,-,True
+gpt-5.1,False,False,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.1167
+Max Persuadability:,0.2759
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+275,45.83,325,54.17,0.0454,True
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,11,31.43,24,68.57,0.041,True
+2,20,55.56,16,44.44,0.6177,False
+3,33,100.0,0,0.0,0.0,True
+4,20,52.63,18,47.37,0.8714,False
+5,39,84.78,7,15.22,0.0,True
+6,21,51.22,20,48.78,1.0,False
+7,0,0.0,45,100.0,0.0,True
+8,53,100.0,0,0.0,0.0,True
+9,32,82.05,7,17.95,0.0001,True
+10,7,15.91,37,84.09,0.0,True
+11,0,0.0,46,100.0,0.0,True
+12,5,13.51,32,86.49,0.0,True
+13,4,9.3,39,90.7,0.0,True
+14,9,28.12,23,71.88,0.0201,True
+15,21,65.62,11,34.38,0.1102,False
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,43,65,46
+gemini-3-pro-preview,48,57,44
+gpt-4o,17,34,41
+gpt-5.1,80,66,59
+
+Chi-squared statistic,17.547
+Chi-squared p-value,0.0075
+Significant (p < 0.05)?,True

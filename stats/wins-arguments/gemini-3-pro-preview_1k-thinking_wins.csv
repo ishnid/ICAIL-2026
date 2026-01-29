@@ -1,0 +1,74 @@
+Judge model: gemini-3-pro-preview_1k-thinking
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,39,43,47
+gemini-3-pro-preview,53,-,67,38
+gpt-4o,35,36,-,31
+gpt-5.1,62,64,85,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+gpt-5.1,211,116,327,163.5
+claude-sonnet-4.5,129,150,279,139.5
+gemini-3-pro-preview,158,139,297,148.5
+gpt-4o,102,195,297,148.5
+
+chisquare statistic,29.7584
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.175,0.4282,0.1797
+gemini-3-pro-preview,0.175,-,0.0029,0.0129
+gpt-4o,0.4282,0.0029,-,0.0
+gpt-5.1,0.1797,0.0129,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,False,False
+gemini-3-pro-preview,False,-,True,True
+gpt-4o,False,True,-,True
+gpt-5.1,False,True,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.1233
+Max Persuadability:,0.2328
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+317,52.83,283,47.17,0.1779,False
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,17,48.57,18,51.43,1.0,False
+2,12,33.33,24,66.67,0.0652,False
+3,5,15.15,28,84.85,0.0001,True
+4,10,26.32,28,73.68,0.0051,True
+5,46,100.0,0,0.0,0.0,True
+6,33,80.49,8,19.51,0.0001,True
+7,11,24.44,34,75.56,0.0008,True
+8,53,100.0,0,0.0,0.0,True
+9,17,43.59,22,56.41,0.5224,False
+10,2,4.55,42,95.45,0.0,True
+11,3,6.52,43,93.48,0.0,True
+12,33,89.19,4,10.81,0.0,True
+13,35,81.4,8,18.6,0.0,True
+14,32,100.0,0,0.0,0.0,True
+15,8,25.0,24,75.0,0.007,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,40,48,41
+gemini-3-pro-preview,51,58,49
+gpt-4o,24,41,37
+gpt-5.1,73,75,63
+
+Chi-squared statistic,4.0806
+Chi-squared p-value,0.6658
+Significant (p < 0.05)?,False

@@ -1,0 +1,74 @@
+Judge model: claude-sonnet-4-5-20250929_8k-thinking
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,51,48,53
+gemini-3-pro-preview,41,-,66,46
+gpt-4o,30,37,-,29
+gpt-5.1,56,56,87,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+claude-sonnet-4.5,152,127,279,139.5
+gpt-5.1,199,128,327,163.5
+gemini-3-pro-preview,153,144,297,148.5
+gpt-4o,96,201,297,148.5
+
+chisquare statistic,27.525
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.3481,0.0535,0.8482
+gemini-3-pro-preview,0.3481,-,0.0055,0.3729
+gpt-4o,0.0535,0.0055,-,0.0
+gpt-5.1,0.8482,0.3729,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,False,False
+gemini-3-pro-preview,False,-,True,False
+gpt-4o,False,True,-,True
+gpt-5.1,False,False,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.1067
+Max Persuadability:,0.25
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+281,46.83,319,53.17,0.1308,False
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,11,31.43,24,68.57,0.041,True
+2,20,55.56,16,44.44,0.6177,False
+3,33,100.0,0,0.0,0.0,True
+4,24,63.16,14,36.84,0.1433,False
+5,44,95.65,2,4.35,0.0,True
+6,21,51.22,20,48.78,1.0,False
+7,1,2.22,44,97.78,0.0,True
+8,50,94.34,3,5.66,0.0,True
+9,34,87.18,5,12.82,0.0,True
+10,6,13.64,38,86.36,0.0,True
+11,0,0.0,46,100.0,0.0,True
+12,6,16.22,31,83.78,0.0,True
+13,2,4.65,41,95.35,0.0,True
+14,6,18.75,26,81.25,0.0005,True
+15,23,71.88,9,28.12,0.0201,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,48,55,49
+gemini-3-pro-preview,46,61,46
+gpt-4o,21,31,44
+gpt-5.1,73,75,51
+
+Chi-squared statistic,14.1238
+Chi-squared p-value,0.0283
+Significant (p < 0.05)?,True

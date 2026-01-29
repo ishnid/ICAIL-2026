@@ -1,0 +1,74 @@
+Judge model: gpt-5.1_low-reasoning
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,39,43,42
+gemini-3-pro-preview,53,-,62,41
+gpt-4o,35,41,-,34
+gpt-5.1,67,61,82,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+gpt-5.1,210,117,327,163.5
+gemini-3-pro-preview,156,141,297,148.5
+gpt-4o,110,187,297,148.5
+claude-sonnet-4.5,124,155,279,139.5
+
+chisquare statistic,25.3073
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.175,0.4282,0.0211
+gemini-3-pro-preview,0.175,-,0.0482,0.0594
+gpt-4o,0.4282,0.0482,-,0.0
+gpt-5.1,0.0211,0.0594,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,False,True
+gemini-3-pro-preview,False,-,True,False
+gpt-4o,False,True,-,True
+gpt-5.1,True,False,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.1133
+Max Persuadability:,0.2069
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+261,43.5,339,56.5,0.0016,True
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,16,45.71,19,54.29,0.7359,False
+2,5,13.89,31,86.11,0.0,True
+3,14,42.42,19,57.58,0.4869,False
+4,4,10.53,34,89.47,0.0,True
+5,46,100.0,0,0.0,0.0,True
+6,38,92.68,3,7.32,0.0,True
+7,10,22.22,35,77.78,0.0002,True
+8,48,90.57,5,9.43,0.0,True
+9,2,5.13,37,94.87,0.0,True
+10,0,0.0,44,100.0,0.0,True
+11,3,6.52,43,93.48,0.0,True
+12,26,70.27,11,29.73,0.0201,True
+13,20,46.51,23,53.49,0.7608,False
+14,27,84.38,5,15.62,0.0001,True
+15,2,6.25,30,93.75,0.0,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,34,52,38
+gemini-3-pro-preview,52,53,51
+gpt-4o,29,43,38
+gpt-5.1,73,74,63
+
+Chi-squared statistic,4.5336
+Chi-squared p-value,0.6049
+Significant (p < 0.05)?,False

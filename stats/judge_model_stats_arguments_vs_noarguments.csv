@@ -1,0 +1,5 @@
+Judge model,Max persuadability,Max CI low,Max CI high,Population persuadability,Chi-2 p-value,Significant,gpt-5.1 per,gpt-5.1 CI low,gpt-5.1 CI high,gpt-4o per,gpt-4o CI low,gpt-4o CI high,Proportion of biased cases,Proportion of biased cases favouring Party 1,Chi-2 jurisdictions,Significant jurisdictions
+claude-sonnet-4-5-20250929_8k-thinking,0.0567,-0.0477,0.1576,0.0400,0.6845,False,0.0243,-0.0765,0.1236,0.0567,-0.0477,0.1576,0.8000,0.5833,0.7970,False
+deepseek-chat_defaults,0.1804,0.0780,0.2715,0.1350,0.0011,True,0.0922,-0.0090,0.1880,0.1804,0.0780,0.2715,0.4000,0.5000,0.2289,False
+gemini-2.5-flash-lite_reasoning,0.1042,-0.0008,0.2025,0.0556,0.2401,False,0.0098,-0.0911,0.1101,0.1042,-0.0008,0.2025,0.4667,0.2857,0.2691,False
+gpt-5.1_medium-reasoning,0.0876,-0.0169,0.1867,0.0650,0.2879,False,0.0437,-0.0574,0.1422,0.0876,-0.0169,0.1867,0.6667,0.3000,0.7275,False

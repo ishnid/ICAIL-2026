@@ -1,0 +1,74 @@
+Judge model: gpt-5.1_low-reasoning_noarguments
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,41,43,42
+gemini-3-pro-preview,51,-,64,39
+gpt-4o,35,39,-,31
+gpt-5.1,67,63,85,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+gpt-5.1,215,112,327,163.5
+claude-sonnet-4.5,126,153,279,139.5
+gemini-3-pro-preview,154,143,297,148.5
+gpt-4o,105,192,297,148.5
+
+chisquare statistic,30.4743
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.3481,0.4282,0.0211
+gemini-3-pro-preview,0.3481,-,0.0176,0.0223
+gpt-4o,0.4282,0.0176,-,0.0
+gpt-5.1,0.0211,0.0223,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,False,True
+gemini-3-pro-preview,False,-,True,True
+gpt-4o,False,True,-,True
+gpt-5.1,True,True,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.1217
+Max Persuadability:,0.2328
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+252,42.0,348,58.0,0.0001,True
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,13,37.14,22,62.86,0.1755,False
+2,7,19.44,29,80.56,0.0003,True
+3,17,51.52,16,48.48,1.0,False
+4,5,13.16,33,86.84,0.0,True
+5,40,86.96,6,13.04,0.0,True
+6,32,78.05,9,21.95,0.0004,True
+7,11,24.44,34,75.56,0.0008,True
+8,51,96.23,2,3.77,0.0,True
+9,3,7.69,36,92.31,0.0,True
+10,1,2.27,43,97.73,0.0,True
+11,2,4.35,44,95.65,0.0,True
+12,29,78.38,8,21.62,0.0008,True
+13,11,25.58,32,74.42,0.0019,True
+14,27,84.38,5,15.62,0.0001,True
+15,3,9.38,29,90.62,0.0,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,39,48,39
+gemini-3-pro-preview,50,53,51
+gpt-4o,25,42,38
+gpt-5.1,74,79,62
+
+Chi-squared statistic,4.5419
+Chi-squared p-value,0.6038
+Significant (p < 0.05)?,False

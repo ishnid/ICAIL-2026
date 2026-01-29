@@ -1,0 +1,74 @@
+Judge model: claude-haiku-4-5-20251001_8k-thinking_noarguments
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,48,52,39
+gemini-3-pro-preview,44,-,67,32
+gpt-4o,26,36,-,21
+gpt-5.1,70,70,95,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+gpt-5.1,235,92,327,163.5
+gemini-3-pro-preview,143,154,297,148.5
+claude-sonnet-4.5,139,140,279,139.5
+gpt-4o,83,214,297,148.5
+
+chisquare statistic,60.3637
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.7547,0.0043,0.0039
+gemini-3-pro-preview,0.7547,-,0.0029,0.0002
+gpt-4o,0.0043,0.0029,-,0.0
+gpt-5.1,0.0039,0.0002,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,True,True
+gemini-3-pro-preview,False,-,True,True
+gpt-4o,True,True,-,True
+gpt-5.1,True,True,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.17
+Max Persuadability:,0.319
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+223,37.17,377,62.83,0.0,True
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,9,25.71,26,74.29,0.006,True
+2,32,88.89,4,11.11,0.0,True
+3,21,63.64,12,36.36,0.1628,False
+4,26,68.42,12,31.58,0.0336,True
+5,21,45.65,25,54.35,0.6587,False
+6,31,75.61,10,24.39,0.0015,True
+7,15,33.33,30,66.67,0.0357,True
+8,20,37.74,33,62.26,0.0984,False
+9,34,87.18,5,12.82,0.0,True
+10,3,6.82,41,93.18,0.0,True
+11,1,2.17,45,97.83,0.0,True
+12,0,0.0,37,100.0,0.0,True
+13,1,2.33,42,97.67,0.0,True
+14,1,3.12,31,96.88,0.0,True
+15,8,25.0,24,75.0,0.007,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,42,46,51
+gemini-3-pro-preview,43,57,43
+gpt-4o,16,25,42
+gpt-5.1,87,94,54
+
+Chi-squared statistic,25.1504
+Chi-squared p-value,0.0003
+Significant (p < 0.05)?,True

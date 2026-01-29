@@ -1,0 +1,74 @@
+Judge model: QWen-Qwen3-8B_thinking_noarguments
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,58,55,54
+gemini-3-pro-preview,34,-,55,34
+gpt-4o,23,48,-,36
+gpt-5.1,55,68,80,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+claude-sonnet-4.5,167,112,279,139.5
+gpt-5.1,203,124,327,163.5
+gpt-4o,107,190,297,148.5
+gemini-3-pro-preview,123,174,297,148.5
+
+chisquare statistic,30.9404
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.016,0.0004,1.0
+gemini-3-pro-preview,0.016,-,0.5546,0.001
+gpt-4o,0.0004,0.5546,-,0.0001
+gpt-5.1,1.0,0.001,0.0001,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,True,True,False
+gemini-3-pro-preview,True,-,False,True
+gpt-4o,True,False,-,True
+gpt-5.1,False,True,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.1183
+Max Persuadability:,0.2051
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+386,64.33,214,35.67,0.0,True
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,19,54.29,16,45.71,0.7359,False
+2,26,72.22,10,27.78,0.0113,True
+3,21,63.64,12,36.36,0.1628,False
+4,36,94.74,2,5.26,0.0,True
+5,32,69.57,14,30.43,0.0114,True
+6,38,92.68,3,7.32,0.0,True
+7,30,66.67,15,33.33,0.0357,True
+8,48,90.57,5,9.43,0.0,True
+9,35,89.74,4,10.26,0.0,True
+10,11,25.0,33,75.0,0.0013,True
+11,20,43.48,26,56.52,0.4614,False
+12,26,70.27,11,29.73,0.0201,True
+13,15,34.88,28,65.12,0.066,False
+14,29,90.62,3,9.38,0.0,True
+15,0,0.0,32,100.0,0.0,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,58,62,47
+gemini-3-pro-preview,31,57,35
+gpt-4o,34,27,46
+gpt-5.1,65,76,62
+
+Chi-squared statistic,14.5125
+Chi-squared p-value,0.0244
+Significant (p < 0.05)?,True

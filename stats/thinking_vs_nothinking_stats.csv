@@ -1,0 +1,21 @@
+Thinking judge,Nothinking judge,Thinking population persuadability,Nothinking population persuadability,Chi-2 p-value,Significant
+claude-haiku-4-5-20251001_8k-thinking,claude-haiku-4-5-20251001_nothinking,0.1567,0.1533,0.8213468852286718,False
+claude-sonnet-4-5-20250929_8k-thinking,claude-sonnet-4-5-20250929_1k-thinking,0.1067,0.1167,0.9708410098364436,False
+deepseek-reasoner_defaults,deepseek-chat_defaults,0.1583,0.1983,0.3248865926069186,False
+gemini-2.5-flash-lite_reasoning,gemini-2.5-flash-lite_nonreasoning,0.1857,0.1341,0.2619496748944963,False
+gemini-3-pro-preview_8k-thinking,gemini-3-pro-preview_1k-thinking,0.1017,0.1233,0.8480586966315303,False
+gpt-5-nano_medium-reasoning,gpt-5-nano_minimal-reasoning,0.1350,0.0800,0.040222811171581274,True
+gpt-5.1_medium-reasoning,gpt-5.1_low-reasoning,0.0950,0.1133,0.9330951428636771,False
+mistralai/Magistral-Small-2506_defaults,mistralai/Mistral-Small-3.2-24B-Instruct-2506_defaults,0.1003,0.0993,0.9301323899793557,False
+Qwen/Qwen3-32B_thinking,Qwen/Qwen3-32B_nothinking,0.1683,0.1433,0.9271145954142451,False
+QWen/Qwen3-8B_thinking,QWen/Qwen3-8B_nothinking,0.1250,0.1333,0.4437274078666493,False
+claude-haiku-4-5-20251001_8k-thinking_noarguments,claude-haiku-4-5-20251001_nothinking_noarguments,0.1700,0.1250,0.4229880155004013,False
+claude-sonnet-4-5-20250929_8k-thinking_noarguments,claude-sonnet-4-5-20250929_1k-thinking_noarguments,0.1033,0.1283,0.9073064731895631,False
+deepseek-reasoner_defaults_noarguments,deepseek-chat_defaults_noarguments,0.1850,0.1850,0.8955100685442938,False
+gemini-2.5-flash-lite_reasoning_noarguments,gemini-2.5-flash-lite_nonreasoning_noarguments,0.2008,0.1454,0.30613444257718536,False
+gemini-3-pro-preview_8k-thinking_noarguments,gemini-3-pro-preview_1k-thinking_noarguments,0.1100,0.1083,0.985044407080709,False
+gpt-5-nano_medium-reasoning_noarguments,gpt-5-nano_minimal-reasoning_noarguments,0.1350,0.0893,0.22071455280671715,False
+gpt-5.1_medium-reasoning_noarguments,gpt-5.1_low-reasoning_noarguments,0.1083,0.1217,0.9156619040132489,False
+mistralai/Magistral-Small-2506_defaults_noarguments,mistralai/Mistral-Small-3.2-24B-Instruct-2506_defaults_noarguments,0.1093,0.1171,0.9900666129507841,False
+Qwen/Qwen3-32B_thinking_noarguments,Qwen/Qwen3-32B_nothinking_noarguments,0.1950,0.1517,0.3762535376118345,False
+QWen/Qwen3-8B_thinking_noarguments,QWen/Qwen3-8B_nothinking_noarguments,0.1183,0.1244,0.7851434729422319,False

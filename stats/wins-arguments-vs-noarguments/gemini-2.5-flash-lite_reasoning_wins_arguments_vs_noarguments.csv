@@ -1,0 +1,73 @@
+Judge model: gemini-2.5-flash-lite_reasoning_outcomes_arguments_vs_noarguments.csv
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,gpt-4o-arguments,gpt-4o-noarguments,gpt-5.1-arguments,gpt-5.1-noarguments
+gpt-4o-arguments,-,58,-,-
+gpt-4o-noarguments,38,-,-,-
+gpt-5.1-arguments,-,-,-,52
+gpt-5.1-noarguments,-,-,50,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+gpt-5.1-noarguments,50,52,102,51.0
+gpt-4o-noarguments,38,58,96,48.0
+gpt-5.1-arguments,52,50,102,51.0
+gpt-4o-arguments,58,38,96,48.0
+
+chisquare statistic,4.2059
+chisquare pvalue,0.2401
+chisquare significant,False
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,gpt-4o-arguments,gpt-4o-noarguments,gpt-5.1-arguments,gpt-5.1-noarguments
+gpt-4o-arguments,-,0.0519,-,-
+gpt-4o-noarguments,0.0519,-,-,-
+gpt-5.1-arguments,-,-,-,0.9212
+gpt-5.1-noarguments,-,-,0.9212,-
+
+Significant @ p < 0.05?
+,gpt-4o-arguments,gpt-4o-noarguments,gpt-5.1-arguments,gpt-5.1-noarguments
+gpt-4o-arguments,-,False,-,-
+gpt-4o-noarguments,False,-,-,-
+gpt-5.1-arguments,-,-,-,False
+gpt-5.1-noarguments,-,-,False,-
+
+Skips,2,1.0%
+
+Max Persuadability:,0.1042
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+94,47.47,104,52.53,0.5225,False
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,2,15.38,11,84.62,0.0225,True
+2,7,63.64,4,36.36,0.5488,False
+3,13,59.09,9,40.91,0.5235,False
+4,17,94.44,1,5.56,0.0001,True
+5,9,60.0,6,40.0,0.6072,False
+6,8,88.89,1,11.11,0.0391,True
+7,2,12.5,14,87.5,0.0042,True
+8,8,66.67,4,33.33,0.3877,False
+9,7,87.5,1,12.5,0.0703,False
+10,3,20.0,12,80.0,0.0352,True
+11,0,0.0,11,100.0,0.001,True
+12,7,77.78,2,22.22,0.1797,False
+13,1,8.33,11,91.67,0.0063,True
+14,2,18.18,9,81.82,0.0654,False
+15,8,50.0,8,50.0,1.0,False
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+gpt-4o-arguments,20,16,22
+gpt-4o-noarguments,14,15,9
+gpt-5.1-arguments,19,15,18
+gpt-5.1-noarguments,26,14,10
+
+Chi-squared statistic,7.5975
+Chi-squared p-value,0.2691
+Significant (p < 0.05)?,False

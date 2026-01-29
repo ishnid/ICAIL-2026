@@ -1,0 +1,74 @@
+Judge model: claude-haiku-4-5-20251001_nothinking_noarguments
+
+"Wins Matrix (rows are winners, columns are losers)"
+
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,43,46,42
+gemini-3-pro-preview,49,-,62,39
+gpt-4o,32,41,-,28
+gpt-5.1,67,63,88,-
+
+
+Table for chi-squared test
+
+advocate,wins,losses,total,expected_wins (50% of trials)
+claude-sonnet-4.5,131,148,279,139.5
+gpt-5.1,218,109,327,163.5
+gemini-3-pro-preview,150,147,297,148.5
+gpt-4o,101,196,297,148.5
+
+chisquare statistic,33.8933
+chisquare pvalue,0.0
+chisquare significant,True
+
+Statistical Tests (two-sided binomial test rounded to 4 places of decimals)
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,0.6024,0.1405,0.0211
+gemini-3-pro-preview,0.6024,-,0.0482,0.0223
+gpt-4o,0.1405,0.0482,-,0.0
+gpt-5.1,0.0211,0.0223,0.0,-
+
+Significant @ p < 0.05?
+,claude-sonnet-4.5,gemini-3-pro-preview,gpt-4o,gpt-5.1
+claude-sonnet-4.5,-,False,False,True
+gemini-3-pro-preview,False,-,True,True
+gpt-4o,False,True,-,True
+gpt-5.1,True,True,True,-
+
+Skips,0,0.0%
+
+Persuadability:,0.125
+Max Persuadability:,0.2586
+
+Overall Tendency to choose party 1 vs. party 2
+Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+216,36.0,384,64.0,0.0,True
+
+Tendency per case to choose party 1 vs. party 2
+Case ID,Party 1,%,Party 2,%,p-value,Significant (p < 0.05)
+1,5,14.29,30,85.71,0.0,True
+2,35,97.22,1,2.78,0.0,True
+3,25,75.76,8,24.24,0.0046,True
+4,26,68.42,12,31.58,0.0336,True
+5,11,23.91,35,76.09,0.0005,True
+6,35,85.37,6,14.63,0.0,True
+7,22,48.89,23,51.11,1.0,False
+8,8,15.09,45,84.91,0.0,True
+9,32,82.05,7,17.95,0.0001,True
+10,7,15.91,37,84.09,0.0,True
+11,1,2.17,45,97.83,0.0,True
+12,0,0.0,37,100.0,0.0,True
+13,1,2.33,42,97.67,0.0,True
+14,0,0.0,32,100.0,0.0,True
+15,8,25.0,24,75.0,0.007,True
+
+Wins per advocate per jurisdiction
+Advocate model,Wins (J1),Wins (J2),Wins (J3)
+claude-sonnet-4.5,38,42,51
+gemini-3-pro-preview,43,64,43
+gpt-4o,27,28,46
+gpt-5.1,80,88,50
+
+Chi-squared statistic,22.4334
+Chi-squared p-value,0.001
+Significant (p < 0.05)?,True
