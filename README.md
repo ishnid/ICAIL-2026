@@ -1,6 +1,6 @@
 # Persuadability and LLMs as Legal Decision Tools
 
-This repository stores all code, data, prompt templates, prompts and statistics relating to the [ICAIL 2026](https://site.smu.edu.sg/icail-2026) submission named "Persuadability and LLMs as Legal Decision Tools".
+This repository stores all code, data, prompt templates, prompts and statistics relating to the [21st International Conference on Artificial Intelligence and Law (ICAIL 2026)](https://site.smu.edu.sg/icail-2026) submission named "Persuadability and LLMs as Legal Decision Tools" by [Oisin Suttle](https://www.maynoothuniversity.ie/people/oisin-suttle) ([Maynooth University](https://www.maynoothuniversity.ie)) and [David Lillis](https://people.ucd.ie/david.lillis) ([University College Dublin](https://www.ucd.ie)).
 
 If this paper is accepted, this repository will remain available, albeit moved to a non-anonymous repository linked to one of the authors.
 
