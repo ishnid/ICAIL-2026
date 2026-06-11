@@ -1,8 +1,22 @@
 # Persuadability and LLMs as Legal Decision Tools
 
-This repository stores all code, data, prompt templates, prompts and statistics relating to the paper entitled "Persuadability and LLMs as Legal Decision Tools" by [Oisin Suttle](https://www.maynoothuniversity.ie/people/oisin-suttle) ([Maynooth University](https://www.maynoothuniversity.ie)) and [David Lillis](https://people.ucd.ie/david.lillis) ([University College Dublin](https://www.ucd.ie)), which will be presented at the [21st International Conference on Artificial Intelligence and Law (ICAIL 2026)](https://site.smu.edu.sg/icail-2026) (June 8th to 12th, 2026).
+This repository stores all code, data, prompt templates, prompts and statistics relating to the paper entitled "Persuadability and LLMs as Legal Decision Tools" by [Oisin Suttle](https://www.maynoothuniversity.ie/people/oisin-suttle) ([Maynooth University](https://www.maynoothuniversity.ie)) and [David Lillis](https://people.ucd.ie/david.lillis) ([University College Dublin](https://www.ucd.ie)), which was presented at the [21st International Conference on Artificial Intelligence and Law (ICAIL 2026)](https://site.smu.edu.sg/icail-2026) (June 8th to 12th, 2026).
 
 The paper is available on [arXiv](https://arxiv.org/abs/2604.26233).
+
+
+## Citing
+
+The paper can be cited as follows:
+
+	@inproceedings{Suttle2026,
+	  title = {Persuadability and {{LLMs}} as {{Legal Decision Tools}}},
+	  booktitle = {Proceedings of the 21st {{International Conference}} on {{Artificial Intelligence}} and {{Law}} ({{ICAIL}} 2026)},
+	  author = {Suttle, Oisin and Lillis, David},
+	  year = 2026,
+	  month = jun,
+	  address = {Singapore},
+	}
 
 
 ## Contents
@@ -16,7 +30,7 @@ Contains several subfolders:
 - `cleaning`: scripts to extract plain text from model outputs (not all models require cleaning).
 - `local-prompting`: scripts that were run locally on a Slurm-controlled HPC cluster to prompt locally-run LLMs.
   - `judgment_job.sh`: batch script to invoke Python scripts via Slurm scheduler.
-  - `judge_*.py`: 
+  - `judge_*.py`: python programs to feed prompts to judge models hosted locally.
 - `remote-prompting` Jupyter notebooks used for accessing LLMs via APIs:
   - `advocates.ipynb`: prompt advocate models to generate arguments.
   - `judgment.ipynb`: prompt judge models to obtain decisions
@@ -96,3 +110,5 @@ Individual CSV files:
 	- **Significant**: true iff Chi-square p-value < 0.05
 - `all_outcomes.csv` - all the outcomes of every judgment - all stats are extracted from this
 - `all_outcomes_arguments_vs_noarguments.csv` - all the outcomes of every judgment where we are pitting advocate models against themselves with and without access to the original arguments.
+
+
