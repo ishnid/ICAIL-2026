@@ -2,7 +2,9 @@
 
 This repository stores all code, data, prompt templates, prompts and statistics relating to the paper entitled "Persuadability and LLMs as Legal Decision Tools" by [Oisin Suttle](https://www.maynoothuniversity.ie/people/oisin-suttle) ([Maynooth University](https://www.maynoothuniversity.ie)) and [David Lillis](https://people.ucd.ie/david.lillis) ([University College Dublin](https://www.ucd.ie)), which was presented at the [21st International Conference on Artificial Intelligence and Law (ICAIL 2026)](https://site.smu.edu.sg/icail-2026) (June 8th to 12th, 2026).
 
-The paper is available on [arXiv](https://arxiv.org/abs/2604.26233).
+The paper was also accepted to the NECTAR Track of the [34th Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2026)](https://aics2026.com) (October 15th to October 17th, 2026).
+
+The paper is available on [arXiv](https://arxiv.org/abs/2604.26233v2).
 
 
 ## Citing
@@ -16,6 +18,7 @@ The paper can be cited as follows:
 	  year = 2026,
 	  month = jun,
 	  address = {Singapore},
+	  doi = {10.1145/3836937.3837003}
 	}
 
 
